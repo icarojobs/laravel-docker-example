@@ -1,0 +1,13 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    level: 7
+    checkOctaneCompatibility: true
+    checkModelProperties: true
+    checkMissingIterableValueType: false
+    paths:
+        - app
+    ignoreErrors:
+        - "#^Unable to resolve the template type TKey in call to function collect$#"
+        - "#^Unable to resolve the template type TValue in call to function collect$#"
